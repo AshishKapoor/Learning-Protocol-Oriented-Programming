@@ -3,5 +3,8 @@
     <pages>
         <page name='Lesson 01 - Intro to Protocols Oriented Programming'/>
         <page name='Lesson 02 - Protocols inheritance'/>
+        <page name='Lesson 03 - Protocol Extension'/>
+        <page name='Lesson 04 - Protocol as Type'/>
+        <page name='Lesson 05 - Delegate'/>
     </pages>
 </playground>
