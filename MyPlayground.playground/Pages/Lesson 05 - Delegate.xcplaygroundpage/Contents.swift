@@ -6,7 +6,7 @@ import Foundation
 // Mom (delegate) = skill special
 
 protocol Cookable {
-    func makeFood() -> Void
+    func makeFood()
 }
 
 struct Mom:Cookable {
@@ -19,13 +19,13 @@ var mom = Mom()
 mom.makeFood()
 
 struct Baby {
-    var delegate = Cookable?
+    var delegate: Cookable?
 }
 
 var bob = Baby()
 bob.delegate = mom
 
-bob.delegate.makeFood()
-bob.delegate.makeFood()
-bob.delegate.makeFood()
-bob.delegate.makeFood()
+bob.delegate?.makeFood()
+bob.delegate?.makeFood()
+bob.delegate?.makeFood()
+bob.delegate?.makeFood()
